@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:flutter/foundation.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -143,6 +142,7 @@ class OtherSettingsController extends BaseController {
       allowedExtensions: ['log'],
       type: FileType.custom,
       fileName: item.name,
+      bytes: Uint8List(0),
     );
     if (filePath != null) {
       var file = File(item.path);
