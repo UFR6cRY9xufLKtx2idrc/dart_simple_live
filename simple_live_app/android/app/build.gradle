@@ -31,7 +31,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.xycz.simple_live"
-    compileSdk = flutter.compileSdkVersion
+    compileSdkVersion 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
